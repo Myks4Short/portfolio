@@ -1,0 +1,401 @@
+@font-face {
+    font-family: PoppinB;
+    src: url(fonts/Poppins-Black.otf);
+}
+
+@font-face {
+    font-family: PoppinM;
+    src: url(fonts/Poppins-Medium.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: #0c1022;
+    color: #fff;
+}
+
+/* Header */
+#header{
+    font-family: PoppinM;
+    padding: 10%;
+    background: transparent;
+    z-index: 100;
+}
+
+/* Logo */
+#logo{
+    font-family: PoppinM;
+    text-decoration: none;
+    opacity: 100;
+    animation: slideTop 1s ease forwards;
+}
+
+/* Nav Bar */
+#navbar a{
+    text-decoration: none;
+    color: #fff;  
+    opacity: 0;
+    animation: slideTop .5s ease forwards; 
+    animation-delay: calc(.2s * var(--i));
+}
+
+#navbar a:hover
+{
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+/* Home Page */
+#home{
+    padding: 70px 10% 0;
+    background-image: url(img/bg1.svg);
+    background-size: cover;
+}
+
+
+#home-content h1{
+    font-family: PoppinM;
+    opacity: 0;
+    animation: slideRight 1s ease forwards ;
+    animation-delay: .7s;
+    
+}
+
+#home-content h3{
+    font-family: PoppinM;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards ;
+    animation-delay: 1s;
+}
+
+#home-content p{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards ;
+    animation-delay: 1.3s;
+}
+
+/* Button */
+#button{
+    letter-spacing: 1px;
+    z-index: 1;
+    font-family: PoppinM;
+    opacity: 0;
+    animation: slideTop 1s ease forwards ;
+    animation-delay: 1.8s;
+}
+/* icons */
+#home-sci a:nth-child(1){
+    opacity: 0;
+    animation: slideBottom 1s ease forwards ;
+    animation-delay: 2.1s;
+}
+
+#home-sci a:nth-child(2){
+    opacity: 0;
+    animation: slideRight 1s ease forwards ;
+    animation-delay: 2.1s;
+}
+
+#home-sci a:nth-child(3){
+    opacity: 0;
+    animation: slideTop 1s ease forwards ;
+    animation-delay: 2.1s;
+}
+
+#home-img{
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2.1s, 3.1s;
+}
+
+#circle-bg{
+ animation: circleRotate 5s linear infinite;   
+}
+
+/* Keyframes for sliding from right to left */
+@keyframes slideTop {
+    0% {
+        opacity: 0; 
+        transform: translateY(100px);
+      
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+      
+    }
+  }
+  
+  /* Keyframes for sliding from left to right */
+  @keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+      
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+      
+    }
+  }
+
+  @keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+      
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+      
+    }
+  }
+
+  @keyframes slideBottom {
+    0% {
+        opacity: 0; 
+        transform: translateY(-100px);
+      
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+      
+    }
+  }
+  
+  @keyframes zoomIn {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+  }
+  
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
+
+@keyframes circleRotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+/* about */
+
+#about-section{
+    background-image: url(img/bg-about.svg);
+    background-size: cover;
+    font-family: PoppinM;
+}
+
+#skill-section{
+    background-image: url(img/bg-skills.svg);
+    background-size: cover;
+    font-family: PoppinM;
+}
+
+#footer-text{
+    font-family: PoppinM;
+}
+
+
+#projects{
+    background-image: url(img/bg-portfolio.svg);
+    background-size: cover;
+}
+
+/* implementing some   */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* ************************************** */
+  /* changing whole websites scrollbar */
+  /* ************************************** */
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #021227;
+    border-radius: 10px;
+    color: #021227;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3cba54;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3cba5399;
+  }
+  
+  /* ************************************** */
+  /* featured project section */
+  /* ************************************** */
+  
+  .featured-project-img-01 {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(25, 254, 67, 0),
+      rgba(25, 254, 67, 0)
+    );
+  
+    transition: background-image 0.5s;
+  
+    position: relative;
+  
+    color: #ffffff78;
+  }
+  
+  .featured-project-img-01::before {
+    content: "";
+    width: 100%;
+    /* height: 100%; */
+    display: block;
+  
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+  
+    background-image: linear-gradient(
+      to bottom,
+      rgba(2, 22, 49, 0.5),
+      rgba(2, 22, 48, 0.5)
+    );
+  
+    /* background-image: linear-gradient(
+      to bottom,
+      rgba(25, 254, 67, 0.1),
+      rgba(25, 254, 67, 0.1)
+    ); */
+    transition: width 1s ease-in-out;
+  }
+  
+  .featured-project-img-01:hover:before {
+    /* height: 0%; */
+    width: 0%;
+  }
+  
+  /* ************************************** */
+  /* hiding scrollbar of img */
+  /* ************************************** */
+  
+  .featured-project-img-01-div::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .featured-project-img-01-div {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* ************************************** */
+  /* mentions projects */
+  /* ************************************** */
+  
+  .mentions-project:hover .mentions-project-img {
+    display: none;
+  }
+  .mentions-project:hover .mentions-project-div {
+    display: block;
+  }
+  
+  .mentions-project {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(25, 254, 67, 0),
+      rgba(25, 254, 67, 0)
+    );
+  
+    transition: background-image 0.5s;
+  
+    position: relative;
+  }
+  
+  .mentions-project::after {
+    content: "";
+  
+    display: block;
+  
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+  
+    background-image: linear-gradient(
+      to bottom,
+      rgba(2, 22, 49, 0.5),
+      rgba(2, 22, 48, 0.5)
+    );
+  
+    /* background-image: linear-gradient(to bottom, #021630a7, #021630a7); */
+    /* background-image: linear-gradient(
+      to bottom,
+      rgba(25, 254, 67, 0.1),
+      rgba(25, 254, 67, 0.1)
+    ); */
+    transition: width 1s ease-in-out;
+  }
+  
+  .mentions-project:hover:after {
+    /* height: 0%; */
+    width: 0%;
+  }
+
+
+#pcb{
+    background-image: url(img/pcb.bmp);
+    background-size: contain;
+}
+
+#contact-me{
+    background-image: url(img/bg-services.svg);
+    background-size: cover;
+}
+
+#menu-toggle:checked ~ #mobile-menu {
+  display: flex;
+}
+
+#cert{
+  background: #0c1022;
+  font-family: PoppinM;
+}

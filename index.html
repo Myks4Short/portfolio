@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap Links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Tailwind Css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <!-- Nav Bar -->
+  <header id="header" class="fixed p-5 w-full top-0 left-0 flex items-center bg-slate-900">
+
+    <!-- Portfolio Text -->
+    <h1 class="text-2xl font-semibold text-neutral-50 flex-grow">
+      <a href="#" id="logo" class="text-neutral-50">Portfolio.</a>
+    </h1>
+
+    <!-- Hamburger Icon for Small/Medium Screens -->
+    <div class="block md:hidden">
+      <label for="menu-toggle" class="cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </label>
+    </div>
+
+    <!-- Checkbox for toggle (works without JavaScript) -->
+    <input type="checkbox" id="menu-toggle" class="hidden" />
+
+    <!-- Navigation Menu -->
+    <nav id="navbar" class="hidden md:flex font-medium text-lg space-x-8">
+      <a href="#home" class="text-white hover:text-gray-300 transition">Home</a>
+      <a href="#about-section" class="text-white hover:text-gray-300 transition">About</a>
+      <a href="#skill-section" class="text-white hover:text-gray-300 transition">Skills</a>
+      <a href="#projects" class="text-white hover:text-gray-300 transition">Portfolio</a>
+      <a href="#contact-me" class="text-white hover:text-gray-300 transition">Contact</a>
+    </nav>
+
+    <!-- Collapsible Menu for Small/Medium Screens -->
+    <nav id="mobile-menu" class="flex-col hidden space-y-4 mt-4 md:hidden bg-slate-800 p-4 absolute top-[80px] left-0 w-full">
+      <a href="#home" class="text-white hover:text-gray-300 transition">Home</a>
+      <a href="#about-section" class="text-white hover:text-gray-300 transition">About</a>
+      <a href="#skill-section" class="text-white hover:text-gray-300 transition">Skills</a>
+      <a href="#projects" class="text-white hover:text-gray-300 transition">Portfolio</a>
+      <a href="#contact-me" class="text-white hover:text-gray-300 transition">Contact</a>
+    </nav>
+  </header>
+<!-- Nav Bar End -->
+
+
+      <!-- Home Page -->
+        <section id="home" class="flex-col-reverse xl:flex-row bg-slate-900 flex w-full items-center h-screen justify-around">
+
+            <div id="home-sci" class="flex flex-row gap-3 xl:block">
+                <a href="https://www.facebook.com/xxmyks" target="_blank" class="relative flex justify-center items-center w-10 h-10 bg-gradient-to-br from-[#ff0066] to-[#33ccff] rounded-full text-white no-underline my-2 z-10 text-2xl hover:from-[#33ccff] hover:to-[#ff0066]">
+                    <!-- Inner black circle -->
+                    <div class="absolute inset-0 bg-black rounded-full transition-transform duration-300 ease-in-out transform scale-90 hover:scale-0"></div>
+                    <i class='relative z-10 bx bxl-facebook'></i>
+                </a>
+
+                <!-- Instagram Button with Hover Effect -->
+                <a href="https://www.instagram.com/xxmykzzzz/" target="_blank" class="relative flex justify-center items-center w-10 h-10 bg-gradient-to-br from-[#ff0066] to-[#33ccff] rounded-full text-white no-underline my-2 z-10 text-2xl hover:from-[#33ccff] hover:to-[#ff0066]">
+                    <!-- Inner black circle -->
+                    <div class="absolute inset-0 bg-black rounded-full transition-transform duration-300 ease-in-out transform scale-90 hover:scale-0"></div>
+                    <i class='relative z-10 bx bxl-instagram'></i>
+                </a>
+
+                <!-- LinkedIn Button with Hover Effect -->
+                <a href="https://www.linkedin.com/in/john-michael-ferrer-51095a256/" target="_blank" class="relative flex justify-center items-center w-10 h-10 bg-gradient-to-br from-[#ff0066] to-[#33ccff] rounded-full text-white no-underline my-2 z-10 text-2xl hover:from-[#33ccff] hover:to-[#ff0066]">
+                    <!-- Inner black circle -->
+                    <div class="absolute inset-0 bg-black rounded-full transition-transform duration-300 ease-in-out transform scale-90 hover:scale-0"></div>
+                    <i class='relative z-10 bx bxl-linkedin'></i>
+                </a>
+            </div>
+
+            <div id="home-content" class="max-w-[500px] ">
+                
+                    <h1 class="text-blue-50 semi-bold text-6xl">
+                        Hi, It's 
+                        <span class="bg-gradient-to-r from-[#ff0066] via-indigo-400 to-[#33ccff] bg-clip-text text-transparent filter drop-shadow-lg">
+                        Michael
+                        </span>
+                  </h1>
+                  
+                    <h3 class="text-blue-50 font-bold text-2xl ">Electronics Engineer/ Web Developer</h3>
+                    <p class="text-blue-50 text-base pt-3 pb-4 text-justify  ">
+                        an Electronic Engineer and Web Developer. I design cutting-edge electronic systems and build dynamic, user-friendly websites. My blend of technical expertise and web development skills drives innovative solutions and creative problem-solving.
+                    </p>
+               
+                <div class="transition duration-150 ease-out hover:ease-in">
+                    <button id="button" type="button" class="relative inline-flex justify-center items-center rounded-[40px] text-white w-[180px] h-[48px] text-[19px] font-bold bg-gradient-to-r from-[#ff0066] via-indigo-400 to-[#33ccff] hover:from-[#33ccff] via-indigo-400 hover:to-[#ff0066]">
+                          <!-- Glowing effect -->
+                          <div class="absolute inset-0 blur-5 opacity-75 filter blur-lg rounded-[40px] bg-gradient-to-r from-[#ff0066] via-indigo-400 to-[#33ccff]"></div>
+                          <!-- Button Text -->
+                          <a href="img/Ferrer_CV.jpg" target="_blank"><span class="relative z-10">Hire Me</span></a>
+                        </button>
+                </div>
+                      
+            </div>
+
+            <div class="relative w-[410px] h-[410px] lg:flex-col lg:w-[500px] lg:h-[500px]" id="home-img">
+              <!-- Wrapper for the blurred circle -->
+              <div class="absolute inset-0 flex justify-center items-center">
+                  <!-- Outer lime circle with blur effect -->
+                  <div id="circle-bg" class="absolute inset-0 bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 hover:from-cyan-400 hover:to-rose-500 rounded-full filter blur-[10px] lg:blur-[15px]">
+                  </div>
+              </div>
+            
+              <!-- Inner black circle without blur -->
+              <div class="absolute inset-0 flex justify-center items-center">
+                  <div class="w-[380px] h-[380px] bg-slate-900 rounded-full flex justify-center items-center lg:w-[470px] lg:h-[470px]">
+                      <!-- Image inside the black circle -->
+                      <img src="img/dp.png" alt="Profile" class="w-full h-full object-cover rounded-full">
+                  </div>
+              </div>
+          </div>
+          
+        </section>
+      <!-- Home Page End -->
+
+        <!-- About me -->
+
+        <!-- About Section -->
+          <section id="about-section" class="w-full h-auto flex flex-col justify-around px-8 lg:flew-row items-center xl:flex-row ">
+            <!-- About Left: Image -->
+            <div class="relative flex flex-col items-center justify-center w-[250px] h-[250px] md:w-[350px] md:h-[350px] lg:w-[420px] lg:h-[420px] mb-8 md:mb-10 lg:mb-0">
+              <!-- Outer gradient circle with glow -->
+              <div class="relative w-full h-full flex justify-center items-center">
+                  <div class="absolute inset-0 bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 hover:from-cyan-400 hover:to-rose-500 rounded-full">
+                      <!-- Glowing effect outside the black circle -->
+                      <div id="circle-bg" class="absolute inset-0 rounded-full bg-gradient-to-r from-[#ff0066] via-indigo-400 to-[#33ccff] opacity-75 blur-md"></div>
+                      <!-- Inner black circle -->
+                      <div class="absolute inset-0 flex justify-center items-center">
+                          <div class="w-[220px] h-[220px] md:w-[300px] md:h-[300px] lg:w-[370px] lg:h-[370px] bg-slate-900 rounded-full flex justify-center items-center relative z-10">
+                              <!-- Image inside the black circle -->
+                              <img src="img/dp1.png" alt="About Img" class="w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:w-[350px] lg:h-[350px] object-cover rounded-full">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+
+            <!-- About Right: Content -->
+            <div class="about-right w-full md:w-[80%] lg:w-[54%] h-screen flex flex-col items-center md:items-center lg:items-start">
+                <h1 class="text-3xl md:text-4xl font-bold text-white mb-5 text-center lg:text-left mt-[200px]">
+                    <span class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">About</span> Me
+                </h1>
+                <p class="text-base text-white leading-6 text-justify md:text-justify lg:text-left mb-5 md:mb-7 lg:mb-0">
+                    Being an Electronics Engineer and Web Developer allows me to combine hardware and software expertise to create innovative, technology-driven solutions. As an electronics engineer, I work with electronic circuits, systems, and devices, designing and optimizing components that drive modern technology. On the other hand, as a Wed Developer I design and build interactive websites and applications using technologies like HTML, CSS, JavaScript, and frameworks.
+                </p>
+
+                <!-- Address Section -->
+                <div class="address my-6">
+                    <ul class="text-center md:text-center lg:text-left">
+                        <li class="flex items-center justify-center md:justify-center lg:justify-start mb-2">
+                            <span class="text-white mr-4"><i class="fas fa-paper-plane"></i></span>
+                            <p class="text-white">Bacolod City, Negros Occidental, Philippines</p>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-center lg:justify-start mb-2">
+                            <span class="text-white mr-4"><i class="fas fa-phone-alt"></i></span>
+                            <p class="text-white">+63 976 0837 383</p>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-center lg:justify-start mb-2">
+                            <span class="text-white mr-4"><i class="far fa-envelope"></i></span>
+                            <p class="text-white">ferrer.johnmichaelalfabeto@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Expertise Section -->
+                <div class="expertise">
+                  <h3 class="text-xl font-semibold mb-4 text-left md:text-center lg:text-left text-white">
+                      <span class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">My Expertise</span>
+                  </h3>
+                
+                    <ul class="flex flex-wrap justify-center md:justify-center lg:justify-start gap-4">
+                        <li class="flex items-center">
+                            <span class="text-white text-2xl mr-3"><i class="fab fa-html5"></i></span>
+                            <p class="text-white">HTML</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-white text-2xl mr-3"><i class="fab fa-css3-alt"></i></span>
+                            <p class="text-white">CSS</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-white text-2xl mr-3"><i class="fab fa-bootstrap"></i></span>
+                            <p class="text-white">Bootstrap</p>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-white text-2xl mr-3"><i class='bx bxl-tailwind-css'></i></span>
+                            <p class="text-white">Tailwind CSS</p>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+          </section>
+
+          <div class=" justify-center pb-[85px]" id="cert">
+            <h3 class="text-2xl font-semibold text-white mb-4 text-center">
+                <span class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent text-4xl">Certificates</span>
+            </h3>
+            <div class="flex flex-col items-center md:flex-row md:justify-between md:gap-6 lg:justify-evenly">
+                <!-- Certificate 1 -->
+                <div class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 p-6 rounded-lg shadow-lg mb-6 md:mb-0 w-full h-auto object-cover rounded lg:w-[400px]">
+                    <img src="img/c1.jpg" alt="Certificate 1" class="w-full h-auto object-cover rounded ">
+                    <p class="text-white mt-2 text-center">Pre-reader Express Course from code.org</p>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 p-6 rounded-lg shadow-lg mb-6 md:mb-0 lg:w-[400px]">
+                    <img src="img/c3.jfif" alt="Certificate 2" class="w-full h-auto object-cover rounded">
+                    <p class="text-white mt-2 text-center">Basic AI and Radar RS Training Series  </p>
+                </div>
+                <!-- Certificate 3 -->
+                <div class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 p-6 rounded-lg shadow-lg mb-6 md:mb-0 w-full h-auto object-cover rounded lg:w-[400px]">
+                    <img src="img/c2.jpg" alt="Certificate 3" class="w-full h-auto object-cover rounded">
+                    <p class="text-white mt-2 text-center">Express Course from code.org</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About us End -->
+
+        <!-- Skills Section -->
+
+        <div class="w-full min-h-screen px-[13%] flex flex-col justify-center items-center bg-gray-100" id="skill-section">
+        
+            <!-- Skills Heading -->
+            <div class="flex items-center justify-center gap-12 pb-12 lg:mt-[100px]">
+                <div class="h-px flex-1 bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 hidden sm:block"></div>
+                <h2 class="text-[white] text-6xl font-bold text-center">
+                     <span class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">Skills</span>
+                </h2>
+                <div class="h-px flex-1 bg-gradient-to-l from-rose-500 via-indigo-400 to-cyan-400 hidden sm:block"></div>
+            </div>
+    
+            <!-- Skills Bars -->
+            <div class="w-full grid grid-cols-2 gap-12">
+                <!-- Skill: PCB -->
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center px-2 text-white">
+                        <p>PCB Layout Design</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="w-full h-2 bg-gray-200 rounded-full">
+                        <div class="h-full bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 rounded-full" style="width: 90%;"></div>
+                    </div>
+                </div>
+            
+                <!-- Skill: Arduino and C++ -->
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center px-2 text-white">
+                        <p>Arduino Uno and C++</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="w-full h-2 bg-gray-200 rounded-full">
+                        <div class="h-full bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+            
+                <!-- Skill: ESD -->
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center px-2 text-white">
+                        <p>Electronic System and Design</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="w-full h-2 bg-gray-200 rounded-full">
+                        <div class="h-full bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+            
+                <!-- Skill: MAD -->
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center px-2 text-white">
+                        <p>Mobile App Development</p>
+                        <p>60%</p>
+                    </div>
+                    <div class="w-full h-2 bg-gray-200 rounded-full">
+                        <div class="h-full bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 rounded-full" style="width: 60%;"></div>
+                    </div>
+                </div>
+            
+                <!-- Skill: PPA -->
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center px-2 text-white">
+                        <p>Physical Prototype Assembly</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="w-full h-2 bg-gray-200 rounded-full">
+                        <div class="h-full bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 rounded-full" style="width: 90%;"></div>
+                    </div>
+                </div>
+            
+                <!-- Skill: Web Dev -->
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center px-2 text-white">
+                        <p>Website Development</p>
+                        <p>50%</p>
+                    </div>
+                    <div class="w-full h-2 bg-gray-200 rounded-full">
+                        <div class="h-full bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 rounded-full" style="width: 50%;"></div>
+                    </div>
+                </div>
+            
+    
+            </div>
+
+                <!-- Services Main -->
+                <div class="py-[100px] grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl">
+                    <!-- Card 1: Website Development -->
+                    <div class="relative p-8 bg-gradient-to-br from-[#ff0066] to-[#33ccff] hover:to-[#ff0066] text-white rounded-lg transition duration-500 hover:bg-gradient-to-br hover:from-[#33ccff] via-indigo-[#ff0066] hover:text-gray-800">
+                        <div class="absolute top-0 left-8 transform -translate-y-1/2 w-16 h-16 bg-white text-slate-900 rounded-lg flex items-center justify-center text-3xl transition duration-500 hover:text-[black] hover:bg-orange-600">
+                            <i class='bx bxs-bolt'></i>
+                        </div>
+                        <h2 class="text-xl mt-8 mb-4 transition duration-500 hover:text-slate-900">PCB Layout Design</h2>
+                        <p class="text-sm text-justify text-slate-900">PCB (Printed Circuit Board) layout design involves creating the physical blueprint for an electronic circuit. It’s a crucial step in electronics manufacturing where the circuit diagram is translated into a physical layout that will be used to produce the actual PCB.</p>
+                    </div>
+                    
+                    
+            
+                    <!-- Card 2: App Development -->
+                    <div class="relative p-8 bg-gradient-to-br from-[#33ccff] to-[#ff0066] hover:to-[#33ccff] text-white rounded-lg transition duration-500 hover:bg-gradient-to-br hover:from-[#ff0066] via-indigo-[#33ccff] hover:text-gray-800">
+                        <div class="absolute top-0 left-8 transform -translate-y-1/2 w-16 h-16 bg-white text-slate-900 rounded-lg flex items-center justify-center text-3xl">
+                            <i class='bx bxs-vector'></i>
+                        </div>
+                        <h2 class="text-xl mt-8 mb-4 transition duration-500 hover:text-slate-900">Electronic System Design</h2>
+                        <p class="text-sm text-justify text-slate-900">Electronic system design involves conceptualizing and developing complete electronic solutions to meet specific functional requirements. It encompasses circuit design, component selection, signal processing, power management, and integrating hardware and software elements.</p>
+                    </div>
+            
+                    <!-- Card 3: Web Designing -->
+                    <div class="relative p-8 bg-gradient-to-br from-[#ff0066] to-[#33ccff] hover:to-[#ff0066] text-white rounded-lg transition duration-500 hover:bg-gradient-to-br hover:from-[#33ccff] via-indigo-[#ff0066] hover:text-gray-800">
+                        <div class="absolute top-0 left-8 transform -translate-y-1/2 w-16 h-16 bg-white text-slate-900 rounded-lg flex items-center justify-center text-3xl">
+                            <i class='bx bx-slider-alt'></i>
+                        </div>
+                        <h2 class="text-xl mt-8 mb-4 transition duration-500 hover:text-slate-900">Physical Prototype Assembly</h2>
+                        <p class="text-sm text-justify text-slate-900">Physical prototype assembly is the hands-on process of building a tangible version of a designed product or system. This includes assembling electronic components, mechanical structures, or other hardware to test a concept. </p>
+                    </div>
+            
+                    <!-- Card 4: Graphic Designing -->
+                    <div class="relative p-8 bg-gradient-to-br from-[#33ccff] to-[#ff0066] hover:to-[#33ccff] text-white rounded-lg transition duration-500 hover:bg-gradient-to-br hover:from-[#ff0066] via-indigo-[#33ccff] hover:text-gray-800">
+                        <div class="absolute top-0 left-8 transform -translate-y-1/2 w-16 h-16 bg-white text-slate-900 rounded-lg flex items-center justify-center text-3xl">
+                            <i class='bx bxl-c-plus-plus'></i>
+                        </div>
+                        <h2 class="text-xl mt-8 mb-4 transition duration-500 hover:text-orange-600">Arduino Uno and C++</h2>
+                        <p class="text-sm text-justify text-slate-900">Arduino Uno is a popular microcontroller platform based on the ATmega328 chip, ideal for prototyping and learning electronics. Paired with C++ programming, it allows users to control hardware components like sensors, motors, and LEDs.</p>
+                    </div>
+            
+                    <!-- Card 5: SEO Marketing -->
+                    <div class="relative p-8 bg-gradient-to-br from-[#ff0066] to-[#33ccff] hover:to-[#ff0066] text-white rounded-lg transition duration-500 hover:bg-gradient-to-br hover:from-[#33ccff] via-indigo-[#ff0066] hover:text-gray-800">
+                        <div class="absolute top-0 left-8 transform -translate-y-1/2 w-16 h-16 bg-white text-slate-900 rounded-lg flex items-center justify-center text-3xl">
+                            <i class='bx bxs-devices'></i>
+                        </div>
+                        <h2 class="text-xl mt-8 mb-4 transition duration-500 hover:text-slate-900">Mobile App Development</h2>
+                        <p class="text-sm text-justify text-slate-900">Mobile app development is the process of creating applications for mobile devices, typically for iOS or Android platforms. Creating intuitive user interfaces (UI) and user experiences (UX). Ensuring smooth performance across devices.</p>
+                    </div>
+            
+                    <!-- Card 6: Content Writing -->
+                    <div class="relative p-8 bg-gradient-to-br from-[#33ccff] to-[#ff0066] hover:to-[#33ccff] text-white rounded-lg transition duration-500 hover:bg-gradient-to-br hover:from-[#ff0066] via-indigo-[#33ccff] hover:text-gray-800">
+                        <div class="absolute top-0 left-8 transform -translate-y-1/2 w-16 h-16 bg-white text-slate-900 rounded-lg flex items-center justify-center text-3xl">
+                            <i class='bx bx-globe' ></i>
+                        </div>
+                        <h2 class="text-xl mt-8 mb-4 transition duration-500 hover:text-orange-600">Website Development</h2>
+                        <p class="text-sm text-justify text-slate-900">Web development refers to the process of building websites or web applications. Such as creating the user interface with HTML, CSS, and JavaScript, ensuring responsiveness and usability.</p>
+                    </div>
+                </div>
+            
+        </div>
+        <!-- Skills Section End -->
+
+
+        <!-- Portfolio -->
+        <section class="bg-[#021227] min-h-screen w-full" id="projects">
+            <div class="flex items-center justify-center gap-12 pb-12">
+                <div class="h-px flex-1 bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 hidden sm:block lg:mt-[100px]"></div>
+                <h2 class="text-[white] text-4xl font-bold text-center lg:mt-[100px]">
+                    Things <span class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">I’ve Built</span>
+                </h2>
+                <div class="h-px flex-1 bg-gradient-to-l from-rose-500 via-indigo-400 to-cyan-400 hidden sm:block lg:mt-[100px]"></div>
+            </div>
+              
+          
+            <!-- featured projects -->
+
+            <!-- featured project 01 -->
+            <div>
+              
+              <div class="flex flex-row gap-12 mt-10 mt-20 items-center items-start lg:flex-col">
+                  <!-- right side -->
+                  <div class="w-full sm:w-1/2 flex flex-col justify-center">
+                      <h2 class="mb-8 text-center text-left text-white lg:text-white text-3xl ml-[50px] font-bold mb-4">01. Brewtique Website</h2>
+                      <p class="bg-[#051830] pl-8 pr-2 py-4 mb-2 rounded shadow-sm sm:relative sm:left-[10%] lg:left-1/4 z-40 text-[#ffffff78] md:text-center">
+                          The goal of building this website is to apply all the learnings from HTML, CSS, and Bootstrap.
+                          <br>
+                          <span class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent font-medium">This Site is Fully Responsive</span>
+                      </p>
+                      <div class="hidden md:hidden lg:block ml-[150px] ">
+                          <ul class="justify-start lg:flex gap-4 justify-start text-sm text-[white] ">
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              <li>Bootstrap</li>
+                          </ul>
+                      </div>
+                  </div>
+          
+                  <!-- left side -->
+                  <div class="w-full h-[300px] lg:mr-[200px] mockup-window border border-base-300">
+                    <div class="featured-project-img-01-div cursor-all-scroll overflow-scroll h-[300px] rounded">
+                      <div class="featured-project-img-01  transition-all	duration-500  ">
+                        <img src="img/Brewtique.png" alt="rode website clone" class="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          
+
+            <!-- featured project 02 -->
+
+            <div>
+              
+              <div class="flex flex-row gap-12 mt-10 mt-20 items-center items-start lg:flex-col">
+                  <!-- right side -->
+                  <div class="w-full sm:w-1/2 flex flex-col justify-center">
+                      <h2 class="mb-8 text-center text-left text-white lg:text-white text-3xl ml-[50px] font-bold mb-4">02. Genius</h2>
+                      <p class="bg-[#051830] pl-8 pr-2 py-4 mb-2 rounded shadow-sm sm:relative sm:left-[10%] md:text-center lg:left-1/4 z-40 text-[#ffffff78] ">
+                          This game development aims to apply the things I have learned during the pre-express and express code from code.org .
+                          <br>
+                          <span class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent font-medium">This Game works accordingly</span>
+                      </p>
+                      <div class="hidden md:hidden lg:block ml-[150px] ">
+                          <ul class="justify-start lg:flex gap-4 justify-start text-sm text-[white] ">
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+          
+                  <!-- left side -->
+                  <div class="w-full h-[300px] lg:mr-[200px] mockup-window border border-base-300">
+                    <div class="featured-project-img-01-div cursor-all-scroll overflow-scroll h-[300px] rounded">
+                      <div class="featured-project-img-01  transition-all	duration-500  ">
+                        <img src="img/Game.png" alt="rode website clone" class="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+            <!-- featured project 03 -->
+
+            <div>
+              <!-- featured project 01 -->
+              <div class="flex flex-row gap-12 mt-10 mt-20 items-center items-start lg:flex-col">
+                  <!-- right side -->
+                  <div class="w-full sm:w-1/2 flex flex-col justify-center">
+                      <h2 class="mb-8 text-center text-left text-white lg:text-white text-3xl ml-[50px] font-bold mb-4">03. City Skyline Art</h2>
+                      <p class="bg-[#051830] pl-8 pr-2 py-4 mb-2 rounded shadow-sm sm:relative sm:left-[10%] lg:left-1/4 z-40 md:text-center text-[#ffffff78] ">
+                          Building this art helps me understand much more about the utilization of HTML and CSS variables and syntax.
+                          <br>
+                          <span class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent font-medium">This Site is Fully Responsive which enables to change the whole art into night mode when use into devices with different size </span>
+                      </p>
+                      <div class="hidden md:hidden lg:block ml-[150px] ">
+                          <ul class="justify-start lg:flex gap-4 justify-start text-sm text-[white] ">
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+          
+                  <!-- left side -->
+                  <div class="w-full h-[300px] lg:mr-[200px] mockup-window border border-base-300">
+                    <div class="featured-project-img-01-div cursor-all-scroll overflow-scroll h-[300px] rounded">
+                      <div class="featured-project-img-01  transition-all	duration-500  ">
+                        <img src="img/freecodecamp.png" alt="rode website clone" class="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+            <!-- featured project 04 -->
+
+          <div>
+              
+              <div class="flex flex-row gap-12 mt-10 mt-20 items-center items-start lg:flex-col">
+                  <!-- right side -->
+                  <div class="w-full sm:w-1/2 flex flex-col justify-center">
+                      <h2 class="mb-8 text-center text-left text-white lg:text-white text-3xl ml-[50px] font-bold mb-4">04. Website Portfolio</h2>
+                      <p class="bg-[#051830] pl-8 pr-2 py-4 mb-2 rounded shadow-sm sm:relative sm:left-[10%] md:text-center lg:left-1/4 z-40 text-[#ffffff78] ">
+                          In constructing this portfolio website it utilizes all that I learned from HTML, CSS, Bootstrap and Tailwind CSS.
+                          <br>
+                          <span class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent font-medium">This Site is Fully Responsive</span>
+                      </p>
+                      <div class="hidden md:hidden lg:block ml-[150px] ">
+                          <ul class="justify-start lg:flex gap-4 justify-start text-sm text-[white] ">
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              <li>Bootstrap</li>
+                              <li>Tailwind CSS</li>
+                          </ul>
+                      </div>
+                  </div>
+          
+                  <!-- left side -->
+                  <div class="w-full h-[300px] lg:mr-[200px] mockup-window border border-base-300">
+                    <div class="featured-project-img-01-div cursor-all-scroll overflow-scroll h-[300px] rounded">
+                      <div class="featured-project-img-01  transition-all	duration-500  ">
+                        <img src="img/PortfolioWebsite.png" alt="rode website clone" class="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+           <!-- featured project 05 -->
+
+           <div>
+              
+            <div class="flex flex-row gap-12 mt-10 mt-20 items-center items-start lg:flex-col">
+                <!-- right side -->
+                <div class="w-full sm:w-1/2 flex flex-col justify-center">
+                    <h2 class="mb-8 text-center text-left text-white lg:text-white text-3xl ml-[50px] font-bold mb-4">05. Team Collaboration</h2>
+                    <p class="bg-[#051830] pl-8 pr-2 py-4 mb-2 rounded shadow-sm sm:relative sm:left-[10%] md:text-center lg:left-1/4 z-40 text-[#ffffff78] ">
+                        In constructing this portfolio website it utilizes all that I learned from HTML, CSS, Bootstrap and Tailwind CSS.
+                        <br>
+                        <span class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent font-medium">This Site is Fully Responsive</span>
+                    </p>
+                    <div class="hidden md:hidden lg:block ml-[150px] ">
+                        <ul class="justify-start lg:flex gap-4 justify-start text-sm text-[white] ">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- left side -->
+                <div class="w-full h-[300px] lg:mr-[200px] mockup-window border border-base-300">
+                  <div class="featured-project-img-01-div cursor-all-scroll overflow-scroll h-[300px] rounded">
+                    <div class="featured-project-img-01  transition-all	duration-500  ">
+                      <img src="img/PortfolioWebsite.png" alt="rode website clone" class="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>          
+
+          
+
+        </section>
+          
+
+        <!-- Fixing -->
+
+            
+        <!-- Additionals -->
+
+        <section class="w-full h-auto flex flex-col py-10 px-4 md:px-12" id="contact-me">
+          <div class="relative container mx-auto">
+            <!-- Background Circle -->
+            <span class="absolute top-[-100px] left-[-100px] w-96 h-96 bg-gradient-to-r from-[#ff0066] via-indigo-400 to-[#33ccff] rounded-full opacity-25"></span>
+        
+            <!-- Contact Info Section -->
+            <div class="flex flex-col md:flex-row md:justify-between bg-[#051830] p-6 md:p-8 rounded-lg shadow-lg space-y-6 md:space-y-0">
+              
+              <!-- Contact Info -->
+              <div class="w-full md:w-1/2 space-y-6">
+                <h3 class="text-2xl md:text-3xl font-bold text-neutral-50 text-center md:text-left">Let's get in touch</h3>
+                <p class="text-[#ffffff78] text-center md:text-left">
+                  Collaboration isn't just a choice, it's the bridge between ideas and innovation, <br> where every voice turns possibility into reality.
+                </p>
+        
+                <div class="space-y-4">
+                  <div class="flex items-center space-x-4 justify-center md:justify-start">
+                    <span class="text-white"><i class="fa-solid fa-location-dot"></i></span>
+                    <p class="text-white">6100 Sum-ag Bacolod City, Negros Occidental</p>
+                  </div>
+                  <div class="flex items-center space-x-4 justify-center md:justify-start">
+                    <span class="text-white"><i class='bx bxl-gmail'></i></span>
+                    <p class="text-white">ferrer.johnmichaelalfabeto@gmail.com</p>
+                  </div>
+                  <div class="flex items-center space-x-4 justify-center md:justify-start">
+                    <span class="text-white"><i class='bx bx-phone'></i></span>
+                    <p class="text-white">+63 976 0837 383</p>
+                  </div>
+                </div>
+        
+                <!-- Social Media Icons -->
+                <div>
+                  <p class="text-[#ffffff78] text-center">Connect with me:</p>
+                  <div class="flex space-x-4 justify-center mt-2">
+                    <a href="#" class="text-white text-2xl hover:text-[#309543]">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white text-2xl hover:text-[#309543]">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white text-2xl hover:text-[#309543]">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white text-2xl hover:text-[#309543]">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Contact Form -->
+              <div class="w-full md:w-1/2 bg-white p-6 md:p-8 rounded-lg shadow-lg mt-6 md:mt-0 relative">
+                <!-- Floating Circles -->
+                <span class="absolute top-[-30px] right-[-30px] w-16 h-16 bg-gradient-to-r from-[#ff0066] via-indigo-400 to-[#33ccff] rounded-full opacity-50"></span>
+                <span class="absolute bottom-[-30px] left-[-30px] w-16 h-16 bg-gradient-to-r from-[#ff0066] via-indigo-400 to-[#33ccff] rounded-full opacity-50"></span>
+        
+                <form action="index.html" autocomplete="off" class="space-y-6">
+                  <h3 class="text-xl md:text-2xl font-bold text-[#021227] text-center md:text-left">Contact Me</h3>
+                  <div class="input-container">
+                    <input type="text" name="name" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#309543]" placeholder="Username" />
+                  </div>
+                  <div class="input-container">
+                    <input type="email" name="email" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#309543]" placeholder="Email" />
+                  </div>
+                  <div class="input-container">
+                    <input type="tel" name="phone" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#309543]" placeholder="Phone" />
+                  </div>
+                  <div class="input-container">
+                    <textarea name="message" class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#309543]" placeholder="Message"></textarea>
+                  </div>
+                  <button type="submit" class="w-full p-4 bg-gradient-to-r from-[#ff0066] via-indigo-400 to-[#33ccff] text-black font-bold rounded-lg hover:bg-gradient-to-r hover:from-[#33ccff] hover:to-[#ff0066]">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <footer class="py-4 bg-[#021227]">
+          <div>
+            <h1 class="text-center" id="footer-text"><span class="bg-gradient-to-r from-rose-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent"><i class="fa-regular fa-copyright"></i>2024 SDTP BATCH 12 | All Rights Reserved</span></h1>
+          </div>
+        </footer>
+        
+          
+
+        <!-- Additionals -->
+
+        <!-- Image sec end -->
+    
+</body>
+
+
+    <!-- Bootstrap Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Tailwind CSS Links -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <script src="Js/main.js"></script>
+
+</html>
